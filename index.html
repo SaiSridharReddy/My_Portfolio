@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sai Sridhar Reddy Palli</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sai Sridhar Reddy Palli</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Assets/Main.jpeg" alt="Sai Sridhar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sai Sridhar</h1>
+        <p class="section__text__p2">Data Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Assets/Sai Sridhar Reddy -Jul 9.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="Assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ssrpalli/'"
+          />
+          <img
+            src="Assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SaiSridharReddy'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="Assets/Sequoia.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="Assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4 years <br />Data Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="Assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Master's in Computer Science  <br />Bachelors of Technology in Computer Science
+            </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            <li>
+            
+              Data Engineer with 4 years of experience designing data-intensive applications leveraging Cloud Data Engineering, Data
+              Warehousing, Hadoop Ecosystem, Big Data Analytics, Data Visualization, and Data Quality solutions.
+            </p>
+            </li>
+            
+            <p>
+            <li>
+              Leveraged Spark SQL and PySpark APIs to perform large-scale data analytics on distributed datasets, achieving faster processing
+              compared to traditional MapReduce jobs.
+            </p>
+            </li>
+            <li>
+            
+              Expert in developing interactive dashboards using AWS QuickSight, Power BI, and Tableau, visualizing key performance
+indicators (KPIs) from Amazon Redshift data for business stakeholders.
+            </p>
+            <p>
+              <li>
+              
+                Experience in Implementing Airflow DAGs (Directed Acyclic Graphs) with custom operators and error handling mechanisms,
+                ensuring data pipeline robustness and easy troubleshooting.
+              </p>
+              </li>
+            </li>
+            <p><li>
+              Ability to Databricks cloud platform to deploy and manage Spark applications, ensuring scalability, elasticity, and cost-
+              effectiveness for big data workloads.
+            </li></p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Engineer at Principal Financial</h2>
+            <div class="article-container">
+                <p><li> Led the development and optimization of ETL pipelines using Python, SQL, Apache Spark, and Hadoop to ensure high-fidelity
+                  migration of critical financial data with minimal disruption. </li></p>
+                <p><li> Integrate Kafka for real-time data streaming, achieving a measurable reduction in data latency and improving the processing
+                  speed of customer transactions. </li></p>    
+                <p><li> Accomplished interactive Power BI reports leveraging advanced DAX and Power Query modeling techniques to unlock deeper
+                  data insights and facilitate informed decision-making </li> </p>
+                <p><li> Designed and implemented serverless data pipelines using AWS Lambda to process real-time data streams, achieving a 10%
+                  reduction in processing latency compared to traditional batch processing methods.</li></p>  
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Data Engineer at KPIT Technology</h2>
+            <div class="article-container">
+                <p><li> Utilized Databricks platform to build and deploy scalable Spark applications in the cloud, reducing infrastructure management
+                  overhead by 40%.</li></p>
+                <p><li>Implemented AWS Glue to automate data catalog creation and schema management for our data lake on Snowflake, ensuring
+                  data consistency and discoverability for data consumers.</li></p>
+                <p><li>Optimized PySpark code using techniques like partitioning and caching, achieving a 25% reduction in processing time for complex
+                    data transformation</li></p>
+                <p><li>Leveraged Snowflake's cloud-based architecture to facilitate collaboration between data analysts and data scientists, leading to
+                  a 30% increase in data-driven project completion rate.</li></p>
+                <p><li>Developed and deployed a high-performing ETL pipeline in Databricks to process terabytes of data daily, enabling efficient data
+                  integration and transformation for the data warehouse. </li></p>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/Stock_market.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Real-Time Stock Market Data Streaming Using Kafka</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SaiSridharReddy/Stock_Market_Kafka_Project'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/Uber_DE.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Uber Data Analytics Using Google Cloud Services</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SaiSridharReddy/Twitter_Airflow_project'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/de_youtube_analysis.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> YouTube Metrics Using AWS Services</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SaiSridharReddy/youtube_de'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="Assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sridhar.p@mycvtalent.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="Assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ssrpalli/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sai Sridhar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
